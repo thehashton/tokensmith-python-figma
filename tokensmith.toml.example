@@ -1,0 +1,18 @@
+# Copy to tokensmith.toml and fill in your Figma file key.
+# Never put your Figma personal access token here — use FIGMA_TOKEN or --token.
+
+file_key = "YOUR_FIGMA_FILE_KEY"
+default_format = "css"
+output_path = "tokens"
+formats = ["css", "tailwind", "ts"]
+
+# Mode used for :root / primary Tailwind & TS exports
+default_mode = "Light"
+
+# Optional CSS selectors for non-default modes
+[mode_selectors]
+Dark = ".dark, [data-theme='dark']"
+
+# Rename Figma variable names on the way out
+[aliases]
+"Color/Primary" = "color/brand-primary"
